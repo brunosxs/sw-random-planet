@@ -44,10 +44,10 @@ export default class HistorySelector extends Component {
                     fullWidth
                     onChange={this.onUpdateSelected}
                   >
-                    {planets.map((planet, i) => {
+                    {planets.map((name, i) => {
                       return (
                         <MenuItem value={i} key={i.toString()}>
-                          {planet.name}
+                          {name}
                         </MenuItem>
                       );
                     })}
