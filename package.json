@@ -51,6 +51,7 @@
   "scripts": {
     "start": "node server.js",
     "precommit": "NODE_ENV=production lint-staged",
+    "postinstall": "npm run build",
     "dev": "react-scripts start",
     "lint": "npx eslint src",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
